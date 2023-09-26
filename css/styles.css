@@ -156,6 +156,12 @@ body{
     margin-top: 2rem;
 }
 
+.btn{
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    height: 40px;
+   }
+
 .button-number{
     width: 35%;
     background-color: hsl(223, 64%, 98%);
@@ -186,12 +192,6 @@ body{
 .add-to-cart{
     margin: 0 0.5rem;
     fill: #901e1e;
-}
-
-.btn{
- padding: 0.3rem;
- border-radius: 0.5rem;
- height: 40px;
 }
 
 .btn:hover{
