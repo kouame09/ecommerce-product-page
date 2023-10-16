@@ -60,6 +60,10 @@ body{
 
 }
 
+.close {
+    display: none;
+}
+
 .bar-header-bottom{
   width: 100%;
   border-bottom: 1px solid hsl(219, 9%, 45%);  
@@ -208,6 +212,13 @@ body{
         width: 100%;
         margin: 0 1.5rem
     }
+
+    .section-product-right{
+        width: 70%;
+        padding: 3rem;
+        margin-top: 1rem;
+    }
+    
 }
 
 /* MEDIA QUERIES SMARTFONE */
@@ -216,14 +227,46 @@ body{
     .icon-menu{
         display: inline-block;
     }
+
+    .close{
+        display: inline-block;
+    }
     
      .header{
         padding: 0 1.5rem;
     }
+/* ---------------------- */
+    .header-left{
+        flex-direction: column;
+        justify-content: flex-start
+    }
+
+    .nav-bar-items{
+        flex-direction: column
+    }
 
     .nav-bar{
-        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        background-color: #eeeeee;
+        height: 135%;
+        padding: 2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+        transform: translateX(-150%);
+        transition: 1s ease-out;
     }
+
+    .translate-x{
+        transform: translateX(0%);
+    }
+
+    /* -------------------------- */
+
 
     .bar-header-bottom{
         display: none;
