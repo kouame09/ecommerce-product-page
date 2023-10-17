@@ -19,10 +19,17 @@ const miniatures = document.querySelectorAll('.products-image');
 // Ajout d'un gestionnaire d'événement à chaque miniature d'image
 miniatures.forEach((miniature, index) => {
   miniature.addEventListener('click', () => {
-    // Mettez à jour l'image principale avec la miniature cliquée
+    // Mise à jour l'image principale avec la miniature cliquée
     imagePrincipale.src = `./images/image-product-${index + 1}.jpg`;
 
     // Changer le texte alternatif de l'image principale 
     imagePrincipale.alt = `products-item${index + 1}`;
   });
 });
+
+
+Element.nextElementSibling
+Element.previousElementSibling
+Element.parentElement
+Element.children[0]
+

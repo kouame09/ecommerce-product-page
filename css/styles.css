@@ -206,6 +206,19 @@ body{
     display: none;
 }
 
+
+.image-product {
+    overflow: hidden; /* Masquer tout contenu qui dépasse */
+    position: relative; /* Nécessaire pour positionner l'image à l'intérieur */
+    border-radius: 10px;
+  }
+  
+  .image-product:hover img {
+    transform: scale(1.2); /* Zoom de 120% au survol */
+    transition: transform 0.5s ease-in-out; /* Animation fluide de 0.3 seconde */
+  }
+  
+
 /* MEDIA QUERIES SMARTFONE */
 @media screen and (max-width: 768px){
     .main-container{
@@ -258,7 +271,8 @@ body{
         letter-spacing: 1px;
         box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
         transform: translateX(-150%);
-        transition: 1s ease-out;
+        transition: 0.5s ease-out;
+        z-index: 999;
     }
 
     .translate-x{
@@ -288,6 +302,10 @@ body{
         width: 100%;
         padding: 0;
     }
+
+    .image-product {
+        border-radius: 0;
+      }
 
     .image-product-1{
         border-radius: 0;
